@@ -5,6 +5,8 @@ from typing import Callable, Iterable
 
 
 class Array:
+    """Class for array functionality"""
+
     def __init__(self, iterable: Iterable) -> None:
         self.iterable = iterable
 
