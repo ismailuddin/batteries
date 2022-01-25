@@ -6,7 +6,7 @@
 import os
 from setuptools import find_packages
 from setuptools import setup
-import batteries
+
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
@@ -15,7 +15,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 setup(
     name="batteries",
     author="Ismail Uddin",
-    version=batteries.__version__,
+    version="0.1.0",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
@@ -26,13 +26,12 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    description="Useful utilities for ppPython",
-    install_requires=["pandas"],
+    description="Useful utilities for Python",
     license="MIT license",
     long_description=long_description,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords="",
+    keywords="array,batteries,loaded",
     packages=find_packages(exclude=("tests")),
     test_suite="tests",
     url="https://www.github.com/ismailuddin/batteries",
