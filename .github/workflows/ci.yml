@@ -28,7 +28,7 @@ jobs:
           pip install pytest pylint
       - name: Lint with pylint
         run: |
-          pylint
+          pylint batteries
       - name: Test with pytest
         run: |
           pytest
