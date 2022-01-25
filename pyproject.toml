@@ -1,7 +1,7 @@
 [tool.black]
 line-length = 79
 [tool.commitizen]
-version = "0.1.0"
+version = "0.2.0"
 tag_format = "v$major.$minor.$patch$prerelease"
 version_files = [
     "batteries/__init__.py",
