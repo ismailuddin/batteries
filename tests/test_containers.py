@@ -37,6 +37,14 @@ class TestArray(unittest.TestCase):
         array = Array(data)
         self.assertEqual(len(data), array.length())
 
+    def test_get(self):
+        data = [{"key": 1}, {"key": 2}, {"key": 2}]
+        array = Array(data)
+        self.assertEqual(data[0], array.get(0))
+        with self.subTest("Test None returned"):
+            array = Array([])
+            self.assertIsNone(array.get(0))
+
     def test_first(self):
         data = [{"key": 1}, {"key": 2}, {"key": 2}]
         array = Array(data)
