@@ -1,8 +1,9 @@
 # batteries
-> Useful utilities for Python
-
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
+![Python CI](https://github.com/ismailuddin/batteries/actions/workflows/ci.yml/badge.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/batteries)
+![PyPi version](https://img.shields.io/pypi/v/batteries)
+> Useful utilities for Python to make it truly batteries loaded
 
 ## Requirements
 - Python 3.6 or newer
