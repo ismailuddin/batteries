@@ -11,12 +11,40 @@
 To install the package, run the following command from a terminal:
 
 ```shell
-$   pip install .
+$   pip install batteries
 ```
 
 
 ## 🚀 Usage
-Example usage of the packakge.
+### JavaScript style arrays
+Manipulate Python lists using a more object-oriented style JavaScript array syntax:
+
+```python
+from batteries.containers import Array
+
+array = Array([
+    [
+        {"category": "A", "value": 0},
+        {"category": "A", "value": 2},
+        {"category": "A", "value": 4},
+    ],
+    [
+        {"category": "B", "value": 7},
+        {"category": "B", "value": 3},
+        {"category": "B", "value": 9},
+    ]
+])
+
+values = (
+    array
+        .flatten()
+        .filter(lambda x: x["category"] == "A")
+        .map(lambda x: x["value"] * 5)
+        .all()
+)
+print(values)
+>>> [0, 10, 20, 35, 15, 45]
+```
 
 ## 📚 Documentation
 Documentation can be built using the command `make docs`, which uses the `Makefile` and the `make` binary.
