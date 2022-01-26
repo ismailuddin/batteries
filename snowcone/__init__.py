@@ -1,5 +1,5 @@
 """
-batteries
+snowcone
 ---
 Useful utilities for ppPython
 """

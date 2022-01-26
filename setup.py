@@ -13,7 +13,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="batteries",
+    name="snowcone",
     author="Ismail Uddin",
     version="0.2.0",
     classifiers=[
@@ -25,15 +25,17 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
     description="Useful utilities for Python",
     license="MIT license",
     long_description=long_description,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords="array,batteries,loaded",
+    keywords="array,snowcone,loaded",
     packages=find_packages(exclude=("tests")),
     test_suite="tests",
-    url="https://www.github.com/ismailuddin/batteries",
+    url="https://www.github.com/ismailuddin/snowcone",
     zip_safe=False,
 )

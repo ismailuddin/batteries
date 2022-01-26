@@ -16,11 +16,11 @@ export BROWSER_PYSCRIPT
 BROWSER := python -c "$$BROWSER_PYSCRIPT"
 
 test:
-	pytest --cov=batteries
+	pytest --cov=snowcone
 
 docs: ## generate Sphinx HTML documentation, including API docs
 	rm -rf docs/source/api
-	sphinx-apidoc -f -o docs/source/api batteries
+	sphinx-apidoc -f -o docs/source/api snowcone
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/build/html/index.html

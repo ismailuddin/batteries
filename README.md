@@ -1,9 +1,9 @@
-# batteries
+# 🍧 snowcone
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-![Python CI](https://github.com/ismailuddin/batteries/actions/workflows/ci.yml/badge.svg)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/batteries)
-![PyPi version](https://img.shields.io/pypi/v/batteries)
-> Useful utilities for Python to make it truly batteries loaded
+![Python CI](https://github.com/ismailuddin/snowcone/actions/workflows/ci.yml/badge.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/snowcone)
+![PyPi version](https://img.shields.io/pypi/v/snowcone)
+> Set of useful utilities for Python inspired by other libraries and languages
 
 ## Requirements
 - Python 3.6 or newer
@@ -12,7 +12,7 @@
 To install the package, run the following command from a terminal:
 
 ```shell
-$   pip install batteries
+$   pip install snowcone
 ```
 
 
@@ -21,9 +21,9 @@ $   pip install batteries
 Manipulate Python lists using a more object-oriented style JavaScript array syntax:
 
 ```python
-from batteries.containers import Array
+from snowcone.containers import Array
 
-array = Array([
+array = [
     [
         {"category": "A", "value": 0},
         {"category": "A", "value": 2},
@@ -34,10 +34,10 @@ array = Array([
         {"category": "B", "value": 3},
         {"category": "B", "value": 9},
     ]
-])
+]
 
 values = (
-    array
+    Array(array)
         .flatten()
         .filter(lambda x: x["category"] == "A")
         .map(lambda x: x["value"] * 5)

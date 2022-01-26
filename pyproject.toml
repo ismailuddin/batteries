@@ -4,6 +4,6 @@ line-length = 79
 version = "0.2.0"
 tag_format = "v$major.$minor.$patch$prerelease"
 version_files = [
-    "batteries/__init__.py",
+    "snowcone/__init__.py",
     "setup.py"
 ]

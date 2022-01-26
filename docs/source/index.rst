@@ -1,4 +1,4 @@
-Welcome to batteries documentation!
+Welcome to snowcone documentation!
 =======================================================
 Useful utilities for ppPython
 

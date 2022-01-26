@@ -15,17 +15,17 @@ import sys
 from datetime import datetime
 
 sys.path.insert(0, os.path.abspath("../../"))
-import batteries
+import snowcone
 
 # -- Project information -----------------------------------------------------
 
 year = datetime.utcnow().strftime("%Y")
-project = "batteries"
+project = "snowcone"
 copyright = year + ", Ismail Uddin"
 author = "Ismail Uddin"
 
 # The full version, including alpha/beta/rc tags
-release = batteries.__version__
+release = snowcone.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -59,9 +59,9 @@ exclude_patterns = []
 #
 html_theme = "sphinx_material"
 html_theme_options = {
-    "repo_url": "https://www.github.com/ismailuddin/batteries",
-    "nav_title": "batteries - Python package",
-    "repo_name": "batteries",
+    "repo_url": "https://www.github.com/ismailuddin/snowcone",
+    "nav_title": "snowcone - Python package",
+    "repo_name": "snowcone",
     "logo_icon": "&#xe869",
     "color_primary": "#000051",
     "color_accent": "#000051",

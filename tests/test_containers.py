@@ -2,7 +2,7 @@
 
 
 import unittest
-from batteries.containers import Array
+from snowcone.containers import Array
 
 
 class TestArray(unittest.TestCase):
