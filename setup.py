@@ -15,7 +15,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 setup(
     name="snowcone",
     author="Ismail Uddin",
-    version="0.2.0",
+    version="0.3.0",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
