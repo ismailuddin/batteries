@@ -25,3 +25,7 @@ repos:
         "-rn",
         "-sn"
       ]
+- repo: https://github.com/pycqa/isort
+  rev: 5.6.4
+  hooks:
+    - id: isort

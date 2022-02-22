@@ -7,3 +7,6 @@ version_files = [
     "snowcone/__init__.py",
     "setup.py"
 ]
+[tool.isort]
+profile = "black"
+force_single_line = true
